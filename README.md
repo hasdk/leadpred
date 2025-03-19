@@ -4,7 +4,6 @@ R package implementing methods for predicting cord blood lead levels from child 
 
 # Installation 
 Install the most recent version of `leadpred` from GitHub via the `remotes` package.
-
 <code>
 library(remotes)
 remotes::install_github('hasdk/leadpred')
