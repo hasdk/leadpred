@@ -1,0 +1,22 @@
+Package: leadpred
+Type: Package
+Title: Methods for Predicting Cord Blood Lead Levels from Child Dentine Lead Measures
+Version: 1.0
+Authors@R: c(
+      person("Hachem", "Saddiki",, "hachem.saddiki@gmail.com", role = c("aut", "cre")),
+      person("Marta", "Mainetti",, "m.mainetti12@campus.unimib.it", role = c("aut", "ctb")),
+      person("Elena", "Colicino",, "elena.colicino@mssm.edu", role = c("aut"))
+    )
+Maintainer: Hachem Saddiki <hachem.saddiki@gmail.com>
+Description: This package provides methods for predicting lead concentrations in cord blood using weekly child dentine lead measurements. The predictions are generated from a trained XGBoost model that takes as input 17-week dentine lead levels data around birth, in addition to (optional) covariates: infant sex, maternal age, exposure to sexond hand smoking, and socio-economic status. The package also provides methods for imputing missing values of dentine lead measures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports:
+  stats,
+  xgboost,
+  longitudinalData
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
