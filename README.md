@@ -1,5 +1,6 @@
 # R/leadpred
-R package implementing methods for predicting cord blood lead levels from child dentine lead measures. The package also provides methods for imputing missing values of dentine lead measures. The current version contains one core function:
+- R package implementing methods for predicting cord blood lead levels from child dentine lead measures. The package also provides methods for imputing missing values of dentine lead measures. Details about the data set and the XGBoost model used for training and validation can be found in the reference paper. 
+- The current version of the package contains one core function:
   - `pred_17wk_cbpb()`: generates cord blood lead predictions from a pre-trained XGBoost model that takes as input 17-week child dentine lead levels data around birth, in addition to (optional) covariates: infant sex, maternal age, exposure to second hand smoking, and socio-economic status. 
 
 # Installation 
