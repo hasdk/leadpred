@@ -12,19 +12,19 @@ remotes::install_github('hasdk/leadpred')
 # Example from Simulated Data
 
 - Generate `n=200` simulated child dentine lead levels for 17 weeks (8 weeks before birth to 8 weeks after birth), in addition to simulated covariates.
-- 
+  
 `simdat = leadpred::gen_simdata(N=200, covars=TRUE)`
 
 - Predict cord blood lead levels from simulated data with covariates.
-- 
+  
 `preds_cov = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17], covars=simdat[,18:22])`
 
 - Predict cord blood lead levels from simulated data without covariates.
-- 
+  
 `preds_nocov = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17])`
 
 - Predict cord blood lead levels from simulated data with missing values for child dentine lead levels (imputation is automatically performed using the 'copy mean' method as described in the reference paper).
-- 
+  
 `simdat[1:(floor(nrow(simdat)/2)),1:10] <- NA`
 `preds_imp = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17])`
 
