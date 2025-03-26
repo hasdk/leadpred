@@ -26,8 +26,8 @@ Predict cord blood lead levels from simulated data without covariates.
 
 Predict cord blood lead levels from simulated data with missing values for child dentine lead levels (imputation is automatically performed using the 'copy mean' method as described in the reference paper).
   
-`simdat[1:(floor(nrow(simdat)/2)),1:10] <- NA
-preds_imp = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17])`
+<code>simdat[1:(floor(nrow(simdat)/2)),1:10] <- NA
+preds_imp = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17])</code>
 
 # References
 Mainetti M, Saddiki H, India-aldana S, Tellez-Rojo MM, Wright RO, Arora M, Colicino E. "Dentine-derived lead exposure biomarker at birth: an estimation of cord blood concentrations through micro-spatial weekly child dentine lead measures". 
