@@ -34,4 +34,4 @@ preds_imp = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17])
 
 
 # References
-Mainetti M, India-aldana S, Saddiki H, Tellez-Rojo MM, Wright RO, Arora M, Colicino E. "Dentine-derived lead exposure biomarker at birth: an estimation of cord blood concentrations through micro-spatial weekly child dentine lead measures". 
+Mainetti M, Saddiki H, India-aldana S, Tellez-Rojo MM, Wright RO, Arora M, Colicino E. "Dentine-derived lead exposure biomarker at birth: an estimation of cord blood concentrations through micro-spatial weekly child dentine lead measures". 
