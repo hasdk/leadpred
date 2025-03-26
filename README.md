@@ -26,6 +26,7 @@ remotes::install_github('hasdk/leadpred')
 - Predict cord blood lead levels from simulated data with missing values for child dentine lead levels (imputation is automatically performed using the 'copy mean' method as described in the reference paper).
   
 `simdat[1:(floor(nrow(simdat)/2)),1:10] <- NA`
+
 `preds_imp = leadpred::pred_17wk_cbpb(pb_data=simdat[,1:17])`
 
 # References
